@@ -1,0 +1,37 @@
+{
+    "name": "phpixie/auth-orm",
+    "description": "ORM wrappers for auuth",
+    "keywords": ["auth", "orm"],
+    "homepage": "http://phpixie.com",
+    "type": "library",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Roman Tsiupa",
+            "email": "draconyster@gmail.com",
+            "homepage": "http://dracony.org"
+        }
+    ],
+    "require": {
+        "phpixie/slice": "3.*@dev",
+        "phpixie/database": "3.*@dev",
+        "phpixie/orm": "3.*@dev",
+        "phpixie/auth": "3.*@dev",
+        "phpixie/http": "3.*@dev",
+        "psr/http-message": "1.*@dev"
+    },
+    "require-dev": {
+        "phpixie/test": "3.*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "PHPixie\\": "src/PHPixie",
+            "PHPixie\\Tests\\": "tests/PHPixie/Tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.x-dev"
+        }
+    }
+}
