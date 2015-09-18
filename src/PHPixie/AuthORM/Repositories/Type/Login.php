@@ -3,7 +3,7 @@
 namespace PHPixie\AuthORM\Repositories\Type;
 
 abstract class Login extends    \PHPixie\AuthORM\Repositories\Repository
-                     implements \PHPixie\Auth\Repositories\Repository\Type\Login
+                     implements \PHPixie\AuthLogin\Repository
 {
     public function getByLogin($login)
     {
