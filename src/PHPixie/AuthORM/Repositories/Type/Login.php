@@ -5,6 +5,10 @@ namespace PHPixie\AuthORM\Repositories\Type;
 abstract class Login extends    \PHPixie\AuthORM\Repositories\Repository
                      implements \PHPixie\AuthLogin\Repository
 {
+    /**
+     * @param $login
+     * @return Login\User
+     */
     public function getByLogin($login)
     {
         $query = $this->query();
@@ -14,6 +18,9 @@ abstract class Login extends    \PHPixie\AuthORM\Repositories\Repository
         
         return $query->findOne();
     }
-    
+
+    /**
+     * @return array
+     */
     abstract protected function loginFields();
 }
